@@ -8,10 +8,10 @@
  */
 
    import java.util.Scanner;
-    class CarOwner{
+    class CarOwner{                                                             //class containing car details
 	private String name;
 	private String regNo;
-	public CarOwner(String name,String regNo)
+	public CarOwner(String name,String regNo)                              //contructor to initialize car members
 	{
 		this.name=name;
 		this.regNo=regNo;
@@ -34,10 +34,10 @@
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		System.out.println("1.Park Car\n2.Get Car\n3.Get Available Space");
+		System.out.println("1.Park Car\n2.Get Car\n3.Get Available Space");        //print statements to get the user choice
 		System.out.println("Enter your choice");
 		int choice=s.nextInt();
-		String arr[][]=new String[5][];
+		String arr[][]=new String[5][];                                           //Jagged Array declaration and Instantiation for floorwise
 		arr[0]=new String[100];
 		arr[1]=new String[70];
 		arr[2]=new String[50];
@@ -51,8 +51,8 @@
 			}
 		}
 		switch(choice)
-		{
-		    case 1 :
+		{                                                                           //Logic for car parking
+		    case 1 :                                                              
 		    	System.out.println("Enter the name and RegNo");
 		    	Scanner sc=new Scanner(System.in);
 		    	String name=sc.nextLine();
@@ -62,7 +62,7 @@
 		    	{
 		    		for(int j=0;j<arr[i].length;j++)
 		    		{
-		    			if(arr[i][j].equals("null"))
+		    			if(arr[i][j].equals("null"))                      // checks if empty space is available or not
 		    			{
 		    				c.setRegNo(regNo);
 		    				arr[i][j]=c.getRegNo();
@@ -71,7 +71,7 @@
 		    		}
 		    	}
 		    	break;
-		    case 2:
+		    case 2:                                                                // Logic for getting the parked car.
 		    	System.out.println("Enter the name and RegNo");
 		    	Scanner sb=new Scanner(System.in);
 		    	String Name=sb.nextLine();
@@ -81,7 +81,7 @@
 		    	{
 		    		for(int j=0;j<arr[i].length;j++)
 		    		{
-		    			if(arr[i][j].equals(RegNo))
+		    			if(arr[i][j].equals(RegNo))                      // checking with the register number
 		    			{
 		    				arr[i][j]="null";
 		    				break;
@@ -89,14 +89,14 @@
 		    		}
 		    	}
 		    	break;
-		    case 3:
+		    case 3:                                                              // Logic for finding empty place
 		    	int count=0;
 		    	System.out.println("Available Space in Car is:");
 		    	for(int i=0;i<arr.length;i++)
 		    	{
 		    		for(int j=0;j<arr[i].length;j++)
 		    		{
-		    			if(arr[i][j].equals("null"))
+		    			if(arr[i][j].equals("null"))                     // checks if empty place is available.
 		    			{
 		    				count++;
 		    			}
