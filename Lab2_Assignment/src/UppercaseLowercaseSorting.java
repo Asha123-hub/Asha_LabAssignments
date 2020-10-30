@@ -31,11 +31,12 @@
 		int len=str.length;
 	    Arrays.sort(str);                                                //sorting the array
 	    if(len%2==0) {                                                  
-	        for(int i=0,j=len/2;i<len/2;i++,j++) {
-	    	    str[i]=str[i].toUpperCase();                            //sorting of the array if even
-	    	    str[j]=str[j].toLowerCase();
-	        }
-	    }
+	        for(int i=0;i<len/2;i++) {
+	    		str[i]=str[i].toUpperCase();
+	    	}
+	    	for(int j=len/2;j<len;j++) {
+	    		str[j]=str[j].toLowerCase();
+	    	}
 	    else {
 	    	for(int i=0;i<len/2+1;i++) {                                //sorting of the array if odd
 	    		str[i]=str[i].toUpperCase();
