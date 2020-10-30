@@ -16,7 +16,7 @@
 	        String stringArr[]=new String[size];
 	        System.out.println("Enter the string");                       //entering the elements of the string and converting into lowercase
 	        for(int itr=0;itr<size;itr++) {
-	        	stringArr[itr]=scan.next().toLowerCase();
+	        	stringArr[itr]=scan.next();
 	        }
 	        String[] sortedArray=sortStrings(stringArr);                  //method is called
 	        System.out.println("The sorted string array is");
