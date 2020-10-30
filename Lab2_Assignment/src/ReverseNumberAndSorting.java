@@ -9,7 +9,7 @@ public class ReverseNumberAndSorting {                                        //
 	public static int[] getSorted(int[] arr) {                               //method definition
 		for(int itr=0;itr<arr.length;itr++) {
 			int reverse=0;
-			while(arr[itr]>0) {          // 
+			while(arr[itr]>0) {          
 				int temp=arr[itr]%10;
 				reverse=reverse*10+temp;
 				arr[itr]=arr[itr]/10;
