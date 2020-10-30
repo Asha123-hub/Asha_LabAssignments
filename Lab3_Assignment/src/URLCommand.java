@@ -22,7 +22,7 @@ public class URLCommand {
 		String temp = str1[length - 1]; // storing the last string in a temporary string
 		String str2[] = temp.split("[.]");
 		String command = (str2[0]);
-		;
+		
 		return command; // returning the command
 	}
 }
