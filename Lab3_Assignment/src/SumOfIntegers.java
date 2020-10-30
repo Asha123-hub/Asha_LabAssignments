@@ -1,4 +1,5 @@
 /**
+
  * @author -  Asha Vinod
  * Date    -  26-10-2020
  * Desc    -  A Java program that reads a line of integers and then displays each integer and the sum of all integers.

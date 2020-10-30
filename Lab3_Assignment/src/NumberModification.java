@@ -4,6 +4,7 @@
  * Date    - 26-10-2020 
  *
  */
+
 import java.util.Scanner;
 public class NumberModification {
  	

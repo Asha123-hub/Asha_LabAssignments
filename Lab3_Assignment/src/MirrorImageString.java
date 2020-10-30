@@ -8,7 +8,7 @@ public class MirrorImageString {
     
 	public static String getImage(String str) {
 		StringBuffer strBuffer=new StringBuffer(str);             //StringBuffer is used to make the string mutable. 
-        strBuffer.reverse();                                             // It reverses the string 
+        strBuffer.reverse();                                     // It reverses the string 
         return strBuffer.toString();
 	}
 	public static void main(String[] args) {

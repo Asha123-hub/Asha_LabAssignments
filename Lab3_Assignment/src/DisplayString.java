@@ -1,4 +1,5 @@
 /**
+
  * Desc   - A java program that displays the number of characters, lines and words in a text
  * @author- Asha Vinod
  * Date   -26-10-2020
@@ -23,7 +24,7 @@ public class DisplayString {
         System.out.println("The number of words in the given text is "+numberOfWords);
         System.out.println("The number of lines in the given text is "+numberOfLines);
         scan.close();
-
+     
 	}
 
 }
